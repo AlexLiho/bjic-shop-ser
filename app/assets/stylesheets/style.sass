@@ -1,0 +1,2082 @@
+@font-face 
+    font-family: 'Proxima Nova Bold'
+    src: url('fonts/proxima_nova_bold.otf')
+    font-weight: 700
+    font-style: normal
+    font-family: 'Proxima Nova Regular'
+    src: url('fonts/proxima_nova_regular.otf')
+    font-weight: 500
+    font-style: normal
+    font-family: 'Proxima Nova Light'
+    src: url('fonts/proxima_nova_light.otf')
+    font-weight: 100
+    font-style: normal
+
+html 
+
+body 
+    margin: 0
+    font-family: 'Proxima Nova Regular'
+    background-image: url('bg.png')
+    color: #47413a
+
+.headSpace 
+    width: 100%
+    min-width: 1200px
+    ul 
+        list-style-type: none
+        padding: 20px 0
+        width: 1200px
+        font-size: 13px
+        margin: auto
+        li 
+            display: inline-block
+            line-height: 56px
+            vertical-align: middle
+            &.logo 
+                background-image: url(logo.svg)
+                background-repeat: no-repeat
+                width: 147px
+                height: 56px
+                a 
+                    width: 100%
+                    height: 100%
+                    display: block
+                
+            
+            &.order 
+                margin-left: 286px
+                a 
+                    display: block
+                    background-color: #43b2aa
+                    width: 205px
+                    height: 50px
+                    font-family: 'Proxima Nova Bold'
+                    text-transform: uppercase
+                    line-height: 50px
+                    text-align: center
+                    color: #FFF
+                    text-decoration: none
+                
+            
+            &.personal 
+                margin-left: 73px
+                position: relative
+                & > ul 
+                    position: absolute
+                    background: #FFF
+                    left: 0
+                    top: 57px
+                    width: 125px
+                    padding: 10px 20px
+                    line-height: 18px
+                    box-shadow: 0px 0px 2px #BBB
+                    display: none
+                    & > li 
+                        line-height: 25px
+                        display: block
+                        &.arrow 
+                            position: absolute
+                            right: 90px
+                            top: -18px
+                            background-image: url(personalMenuBg.png)
+                            background-repeat: no-repeat
+                            width: 30px
+                            height: 30px
+                        
+                        a 
+                            color: #000
+                            text-decoration: none
+                        
+                    
+                
+                & > a 
+                    font-family: 'Proxima Nova Bold'
+                    background-repeat: no-repeat
+                    display: block
+                    background-image: url('personalBtn.png')
+                    color: #47413a
+                    text-decoration: none
+                    padding-left: 70px
+                    width: 170px
+                
+            
+            &.phone 
+                line-height: 20px
+                text-align: right
+                margin-left: 60px
+                span 
+                    font-size: 20px
+                    font-family: 'Proxima Nova Bold'
+                    display: block
+                
+            
+        
+    
+
+.orderSpace 
+    width: 100%
+    min-width: 1200px
+    background-repeat: no-repeat
+    background-position: left bottom
+    height: 374px
+    padding-top: 180px
+    &.pc 
+        background-size: 100% auto
+        background-attachment: fixed
+    
+    div 
+        text-align: center
+        color: #FFF
+        font-size: 18px
+        p 
+            margin: 5px
+        
+        h2 
+            font-family: 'Proxima Nova Bold'
+            font-size: 24px
+        
+        a 
+            display: block
+            margin: 40px auto
+            width: 206px
+            height: 50px
+            background-color: #43b2aa
+            color: #FFF
+            text-transform: uppercase
+            text-decoration: none
+            line-height: 50px
+        
+    
+
+.mainMenuSpace 
+    width: 100%
+    min-width: 1200px
+    background-color: #eeece7
+    height: 274px
+    ul 
+        text-align: center
+        list-style-type: none
+        margin: 0
+        padding: 0
+        padding-top: 57px
+        li 
+            display: inline-block
+            width: 200px
+            font-size: 18px
+            background-position: center top
+            background-repeat: no-repeat
+            a 
+                color: #47413a
+                display: block
+                padding-top: 152px
+                text-decoration: none
+            
+            &.personal 
+                background-image: url('personalBtnBig.png')
+                &.active 
+                    background-image: url('personalBtnSelectedBig.png')
+                
+            
+            &.calculate 
+                background-position: center 30px
+                background-image: url('calculateBtn.png')
+                &.active 
+                    background-image: url('calculateBtnSelected.png')
+                    background-position: center -2px
+                
+            
+            &.service 
+                background-position: center 5px
+                background-image: url('serviceBtn.png')
+                &.active 
+                    background-position: center 0px
+                    background-image: url('serviceBtnSeleted.png')
+                
+            
+            &.faq 
+                background-position: center 35px
+                background-image: url('faqBtn.png')
+                &.active 
+                    background-position: center -9px
+                    background-image: url('faqBtnSelected.png')
+                
+            
+            &.about 
+                background-position: center 35px
+                background-image: url('aboutBtn.png')
+                &.active 
+                    background-position: center -7px
+                    background-image: url('aboutBtnSeleted.png')
+                
+            
+        
+    
+
+.aboutSpace 
+    width: 100%
+    min-width: 1200px
+    background-image: url('uzorBottom.svg')
+    background-repeat: repeat-x
+    background-position: 0px bottom
+    padding-bottom: 100px
+    h1 
+        width: 290px
+        height: 91px
+        margin: 70px auto
+        text-indent: -10000px
+        background-image: url('h1Title.svg')
+    
+    ul 
+        text-align: center
+        list-style-type: none
+        margin: auto
+        padding: 0
+        font-size: 0
+        width: 1200px
+        li 
+            font-size: 14px
+            width: 248px
+            display: inline-block
+            vertical-align: top
+            border-right: solid 1px #d3cfcc
+            min-height: 194px
+            margin-left: 20px
+            padding-right: 20px
+            line-height: 25px
+            &:last-child 
+                border-right: 0
+            
+            strong 
+                font-size: 19px
+                font-family: 'Proxima Nova Bold'
+                display: block
+                line-height: 19px
+                margin-bottom: 27px
+            
+        
+    
+
+.khimSpace 
+    width: 100%
+    margin-top: 10px
+    min-width: 1200px
+    background-repeat: no-repeat
+    background-attachment: fixed
+    height: 374px
+    padding-top: 180px
+    &.pc 
+        background-position: left bottom
+        background-size: 100% auto
+    
+    p 
+        color: #FFF
+        width: 400px
+        text-align: center
+        margin: auto
+        line-height: 25px
+    
+
+.khimSpace h2, .orderSpace h2 
+    background-image: url("khimTitle.svg")
+    height: 100px
+    margin: 30px auto
+    text-indent: -10000px
+    width: 319px
+
+.khimSpace h2.c1, .orderSpace h2.c1 
+    background-image: url("spaceTitle1.png")
+    width: 462px
+    height: 158px
+
+.khimSpace h2.c2, .orderSpace h2.c2 
+    background-image: url("spaceTitle2.png")
+    width: 509px
+    height: 154px
+
+.khimSpace h2.c3, .orderSpace h2.c3 
+    background-image: url("spaceTitle3.png")
+    width: 569px
+    height: 157px
+
+.col2Space 
+    width: 100%
+    min-width: 1200px
+    background-image: url('uzorTop.svg')
+    background-repeat: repeat-x
+    background-position: 0px top
+    margin-top: 10px
+    ul 
+        text-align: center
+        width: 1200px
+        padding: 0
+        margin: auto
+        li 
+            display: inline-block
+            width: 370px
+            font-size: 13px
+            line-height: 20px
+            vertical-align: top
+            text-align: justify
+            margin: 80px 40px 0
+            a 
+                color: #47413a
+            
+            p 
+                margin-bottom: 30px
+                strong 
+                    font-family: 'Proxima Nova Bold'
+                
+            
+        
+    
+
+.partnersSpace 
+    background-color: #FFF
+    width: 100%
+    min-width: 1200px
+    ul 
+        list-style-type: none
+        padding: 50px
+        width: 1100px
+        margin: auto
+        text-align: center
+        li 
+            width: 200px
+            vertical-align: middle
+            display: inline-block
+        
+    
+
+.standartArticleSpace 
+    width: 100%
+    min-width: 1200px
+    h1 
+        margin: 70px auto 30px
+        font-size: 19px
+        width: 900px
+        font-family: 'Proxima Nova Bold'
+    
+    & > div 
+        width: 900px
+        margin: auto
+        font-size: 13px
+        line-height: 20px
+        text-align: justify
+        margin-bottom: 70px
+        strong 
+            font-family: 'Proxima Nova Bold'
+        
+        a 
+            color: #716659
+        
+    
+    hr 
+        border: 0
+        border-top: solid 1px #cdcac4
+        margin: auto
+        margin-top: 40px
+    
+
+.optionsSpace 
+    width: 100%
+    min-width: 1200px
+    h4 
+        text-align: center
+        font-family: "Proxima Nova Bold"
+        font-size: 19px
+    
+    ul 
+        list-style-type: none
+        margin: auto
+        width: 1200px
+        padding: 0
+        margin-top: 80px
+        text-align: center
+        li 
+            list-style-type: none
+            display: inline-block
+            width: 190px
+            vertical-align: top
+            background-repeat: no-repeat
+            background-position: top center
+            padding-top: 125px
+            font-size: 13px
+            margin: 0 20px
+            color: #716659
+            strong 
+                font-family: 'Proxima Nova Bold'
+                display: block
+                color: #3c3c3b
+                font-size: 18px
+                line-height: 28px
+            
+            &.option1 
+                background-image: url(option1.png)
+            
+            &.option2 
+                background-image: url(option2.png)
+                background-position: center 30px
+            
+            &.option3 
+                background-image: url(option3.png)
+            
+            &.option4 
+                background-image: url(option4.png)
+                background-position: center 30px
+            
+            &.option5 
+                background-image: url(option5.png)
+                background-position: center 30px
+            
+        
+    
+
+.bottomSpace 
+    width: 100%
+    min-width: 1200px
+    position: relative
+    margin-top: 80px
+    background-image: url('bgBottom.png')
+    ul 
+        list-style-type: none
+        margin: auto
+        padding: 0
+        text-align: center
+        width: 1200px
+        z-index: 100
+    
+    & > ul 
+        & > li 
+            display: inline-block
+            width: 200px
+            vertical-align: top
+            text-align: left
+            font-size: 13px
+            margin: 40px 17px
+            line-height: 25px
+            & > strong 
+                font-family: 'Proxima Nova Bold'
+                text-transform: uppercase
+                display: block
+                margin-bottom: 30px
+            
+            a 
+                color: #716659
+                text-decoration: none
+                display: block
+            
+            & > a 
+                &:hover 
+                    text-decoration: underline
+                
+            
+        
+    
+
+.bottomSpace > ul > li .phone, .bottomSpace > ul > li .address 
+    font-family: 'Proxima Nova Bold'
+    color: #716659
+
+.socialBottom 
+    width: 100%
+    min-width: 1200px
+    height: 170px
+    margin-top: -20px
+    ul 
+        width: 1200px
+        padding: 0
+        margin: auto
+        list-style-type: none
+        z-index: 100
+        text-align: center
+        li 
+            display: inline-block
+            margin: 0 20px
+            padding: 0
+            vertical-align: bottom
+            &:first-child 
+                background-image: url(bottomImg.png)
+                background-repeat: no-repeat
+                background-position: left top
+                width: 113px
+                height: 143px
+            
+        
+    
+    & > ul 
+        & > li 
+            & > a 
+                display: block
+                height: 24px
+                background-repeat: no-repeat
+                &.facebook 
+                    background-image: url(facebook.png)
+                    width: 15px
+                
+                &.instagramm 
+                    background-image: url(instagramm.png)
+                    width: 24px
+                
+                &.vk 
+                    background-image: url(vk.png)
+                    width: 31px
+                
+                &.tw 
+                    background-image: url(twitter.png)
+                    width: 25px
+                
+            
+            &.facebook 
+                width: 455px
+                padding-left: 20px
+                height: 24px
+                overflow: hidden
+                text-align: left
+            
+            &.card 
+                background-image: url(credit.png)
+                background-repeat: no-repeat
+                width: 199px
+                height: 42px
+            
+        
+    
+
+.calculateSpace 
+    width: 100%
+    min-width: 1200px
+    margin-top: 50px
+    & > div 
+        width: 1130px
+        margin: auto
+        font-size: 0
+        & > div 
+            &.content 
+                background-color: #eeece7
+                overflow: hidden
+                &.success 
+                    font-size: 18px
+                    text-align: center
+                    padding: 100px
+                
+            
+            & > .leftSpace 
+                background-color: #eeece7
+                display: inline-block
+                font-family: "Proxima Nova Bold"
+                font-size: 15px
+                padding: 19px 37px
+                vertical-align: top
+                width: 485px
+                & > h1 
+                    font-family: 'Proxima Nova Bold'
+                    display: block
+                    padding-left: 80px
+                    background-image: url('calculateTitle.png')
+                    background-repeat: no-repeat
+                    font-size: 36px
+                    line-height: 60px
+                    background-position: 0px bottom
+                
+            
+            & > .rightSpace 
+                background-color: #eeece7
+                display: inline-block
+                font-size: 14px
+                padding-left: 61px
+                vertical-align: top
+                width: 510px
+                padding-top: 60px
+                .totalSpace 
+                    background-image: url("calcTotalBg.png")
+                    background-repeat: repeat-x
+                    background-position: left bottom
+                    padding: 20px 30px
+                    width: 389px
+                    margin-bottom: 40px
+                    .timetable 
+                        margin-bottom: 20px
+                        strong 
+                            font-family: 'Proxima Nova Bold'
+                            display: inline-block
+                            margin-right: 40px
+                        
+                    
+                    & > div 
+                        &:last-child 
+                            margin-top: 20px
+                            padding-top: 20px
+                            font-family: 'Proxima Nova Bold'
+                            border-top: dotted 2px #000
+                            font-size: 20px
+                            p 
+                                display: inline-block
+                                vertical-align: middle
+                                margin: 0
+                                &:first-child 
+                                    font-size: 36px
+                                    margin-right: 40px
+                                
+                                &:last-child 
+                                    width: 192px
+                                    text-align: right
+                                    color: #42b2aa
+                                
+                                span 
+                                    display: inline-block
+                                    margin: 10px
+                                    text-decoration: line-through
+                                    color: #000
+                                
+                            
+                        
+                    
+                
+                & > .totalSpace 
+                    & > h4 
+                        font-family: 'Proxima Nova Bold'
+                        font-size: 16px
+                        margin: 0px
+                    
+                    & > div 
+                        & > span 
+                            color: #cdcac4
+                            display: block
+                            margin-top: 20px
+                            margin-bottom: 10px
+                        
+                        & > p 
+                            margin: 0
+                        
+                    
+                
+                div 
+                    &.row 
+                        & > label 
+                            width: 255px
+                            font-size: 14px
+                            &.big 
+                                width: 400px
+                            
+                            a 
+                                color: #000
+                                &:hover 
+                                    text-decoration: none
+                                
+                            
+                        
+                    
+                    &.workersList 
+                        background-color: #fff
+                        line-height: 43px
+                        padding: 10px
+                        text-align: left
+                        font-size: 0
+                        & > div 
+                            margin: 5px 10px
+                            padding-bottom: 5px
+                            display: inline-block
+                            font-size: 14px
+                            &:last-child 
+                                border: 0
+                                padding-bottom: 0
+                            
+                        
+                    
+                    &.cleaner 
+                        div 
+                            &.img 
+                                width: 43px
+                                height: 43px
+                                overflow: hidden
+                                border-radius: 23px
+                                float: left
+                                margin-right: 10px
+                                img 
+                                    width: 43px
+                                
+                            
+                            &.single 
+                                text-align: left
+                                display: inline-block
+                                line-height: 43px
+                            
+                        
+                    
+                    &.row#paymentType 
+                        & > label 
+                            width: 175px
+                        
+                    
+                
+                a 
+                    &.link 
+                        background-color: #43b2aa
+                    
+                
+                .miniFaq 
+                    margin: 0
+                    padding: 0
+                    list-style-type: none
+                    letter-spacing: 1px
+                    margin-top: 40px
+                    li 
+                        div 
+                            display: none
+                            margin-bottom: 20px
+                        
+                        h4 
+                            color: #42b2aa
+                            background-image: url('bullet.png')
+                            background-position: left center
+                            background-repeat: no-repeat
+                            padding-left: 15px
+                            margin: 10px 0
+                            cursor: pointer
+                            &.active 
+                                background-image: url('bulletU.png')
+                            
+                            a 
+                                color: #42b2aa
+                                font-weight: bold
+                                text-decoration: none
+                            
+                        
+                    
+                
+            
+            & > div 
+                &.row 
+                    &.reverse 
+                        & > label 
+                            width: 400px
+                        
+                    
+                
+            
+        
+        & > .top 
+            background-image: url('uzorBottom.svg')
+            background-repeat: repeat-x
+            background-position: 0px bottom
+            height: 28px
+        
+        & > .bottom 
+            background-image: url('uzorTop.svg')
+            background-repeat: repeat-x
+            background-position: 0px bottom
+            height: 28px
+        
+    
+    &.personal 
+        & > div 
+            & > div 
+                & > .leftSpace 
+                    background-color: transparent
+                    width: 585px
+                    h2 
+                        height: 100px
+                        margin-bottom: 0px
+                        margin-top: 0
+                        &.new 
+                            background-image: url('titleNewOrder.png')
+                            background-position: left top
+                            background-repeat: no-repeat
+                            text-indent: -1000px
+                        
+                    
+                
+                &.content 
+                    background-color: transparent
+                
+                & > .rightSpace 
+                    background-color: transparent
+                    padding-top: 130px
+                    width: 460px
+                    padding-left: 0
+                
+            
+        
+        .textinput 
+            background-color: #FFF
+            border: solid 1px #685f56
+            font-family: 'Proxima Nova Regular'
+            font-size: 14px
+            &.date 
+                border-right: 0
+                width: 100px
+            
+            &.time 
+                width: 80px
+            
+        
+        .calendarBtn 
+            border: solid 1px #685f56
+            border-left: 0
+            display: inline-block
+            background-color: #FFF
+            background-image: url('calendar.png')
+            background-position: left 3px
+            background-repeat: no-repeat
+            width: 33px
+            height: 34px
+        
+    
+
+.topUzor 
+    background-image: url('uzorBottom.svg')
+    background-repeat: repeat-x
+    background-position: center bottom
+    height: 28px
+    min-width: 1200px
+
+div 
+    &.row 
+        display: block
+        font-size: 15px
+        margin: 10px 0
+        &.withHint 
+            margin: -7px 0
+            & > a 
+                &:last-child 
+                    line-height: 34px
+                    display: inline-block
+                    background-color: #43b2aa
+                    color: #fff
+                    font-size: 14px
+                    padding: 0 10px
+                    text-decoration: none
+                    margin-left: 5px
+                    font-family: 'Proxima Nova Regular'
+                    display: none
+                
+            
+        
+        & > label 
+            width: 280px
+            display: inline-block
+            vertical-align: top
+            line-height: 34px
+            a 
+                &.info 
+                    display: inline-block
+                    width: 17px
+                    height: 34px
+                    vertical-align: top
+                    background-image: url('hint.png')
+                    background-position: center center
+                    background-repeat: no-repeat
+                    position: relative
+                    div 
+                        background-color: #fff
+                        border-radius: 10px
+                        bottom: 30px
+                        color: #000
+                        display: none
+                        font-family: "Proxima Nova Regular"
+                        font-size: 11px
+                        left: -19px
+                        padding: 5px 10px
+                        position: absolute
+                        text-align: center
+                        z-index: 1000
+                        white-space: nowrap
+                        span 
+                            background-image: url("hintBg.png")
+                            background-position: 10px center
+                            background-repeat: no-repeat
+                            bottom: -17px
+                            height: 19px
+                            left: 20px
+                            position: absolute
+                            width: 23px
+                        
+                    
+                
+            
+            span 
+                display: block
+                font-family: 'Proxima Nova Regular'
+                margin-top: -19px
+                color: #716659
+                font-size: 11px
+                a 
+                    color: #716659
+                
+                &.promoError 
+                    color: #FF0000
+                    display: none
+                
+            
+        
+        div 
+            &.text 
+                padding-top: 10px
+                display: inline-block
+            
+        
+        &.calendar 
+            position: relative
+        
+        & > select 
+            height: 34px
+            width: 120px
+            text-align: center
+            font-size: 16px
+        
+    
+
+.selector 
+    vertical-align: top
+    position: relative
+    width: 192px
+    display: inline-block
+    & > div 
+        font-family: 'Proxima Nova Regular'
+        background-color: #cdcac4
+        height: 34px
+        cursor: pointer
+        & > p 
+            display: inline-block
+            vertical-align: middle
+            padding: 0 0 0 30px
+            margin: 0
+            width: 115px
+            line-height: 34px
+            overflow: hidden
+        
+        & > span 
+            display: inline-block
+            height: 34px
+            border-left: solid 1px #eeece7
+            background-image: url('selectorSelect.png')
+            background-repeat: no-repeat
+            background-position: center center
+            vertical-align: middle
+            width: 44px
+        
+    
+    & > ul 
+        display: none
+        background-color: #cdcac4
+        left: 0
+        list-style-type: none
+        margin: 0
+        padding-top: 0
+        position: absolute
+        top: 34px
+        width: 190px
+        padding: 0
+        z-index: 1000
+        border: solid 1px #eeece7
+        font-family: 'Proxima Nova Regular'
+        box-shadow: 0 1px 1px #000
+        li 
+            height: 34px
+            padding: 0 30px
+            line-height: 34px
+            border-bottom: solid 1px #eeece7
+            cursor: pointer
+            &:hover 
+                background-color: #33a29a
+            
+        
+    
+    &.touched 
+        & > div 
+            background-color: #43b2aa
+            color: #FFF
+        
+        & > ul 
+            background-color: #43b2aa
+            color: #FFF
+        
+    
+    &.address 
+        width: 292px
+        & > div 
+            & > p 
+                width: 213px
+            
+        
+        & > ul 
+            width: 290px
+        
+    
+
+.spinner 
+    font-size: 0
+    display: inline-block
+    vertical-align: top
+    a 
+        display: inline-block
+        height: 32px
+        width: 32px
+        border: solid 1px #eeece7
+        background-repeat: no-repeat
+        background-position: center center
+        background-color: #cdcac4
+        vertical-align: middle
+        &.less 
+            background-image: url('spinnerLess.png')
+        
+        &.more 
+            background-image: url('spinnerMore.png')
+        
+    
+    &.touched 
+        a 
+            background-color: #43b2aa
+        
+        input 
+            background-color: #43b2aa
+        
+    
+    input 
+        background-color: #cdcac4
+        vertical-align: middle
+        display: inline-block
+        height: 30px
+        border: solid 1px #eeece7
+        width: 30px
+        text-align: center
+    
+
+.checkbox 
+    height: 34px
+    width: 19px
+    background-image: url('checkbox.png')
+    background-repeat: no-repeat
+    background-position: right center
+    display: inline-block
+    cursor: pointer
+    &.touched 
+        background-position: left center
+    
+
+.textinput 
+    height: 34px
+    background-color: #cdcac4
+    display: inline-block
+    vertical-align: top
+    border: 0
+    width: 172px
+    padding: 0 10px
+    &.error 
+        border: dotted 1px #FF0000
+    
+    &.success 
+        background-color: #43b2aa
+    
+
+.textinput[name="promo"] 
+    width: 80px
+
+.calculateSpace > div > div > .rightSpace a.submit, .calculateSpace > div > div > .rightSpace a.cancel, .calculateSpace > div > div > .rightSpace a.link 
+    display: block
+    height: 50px
+    text-align: center
+    color: #FFF
+    font-size: 15px
+    line-height: 50px
+    background-color: #43b2aa
+    width: 450px
+    text-decoration: none
+
+.calculateSpace > div > div > .rightSpace a.cancel, .calculateSpace > div > div > .rightSpace a.link 
+    margin-top: 40px
+    background-color: #BF0000
+
+.calculateInfoSpace 
+    width: 100%
+    margin-top: 90px
+    min-width: 1200px
+    h1 
+        text-indent: -10000px
+        background-image: url('calculateInfoSpaceTitle.png')
+        background-position: center top
+        background-repeat: no-repeat
+        height: 94px
+    
+    ul 
+        margin: auto
+        width: 1200px
+        list-style-type: none
+        padding: 0
+        font-size: 0
+        text-align: center
+        li 
+            display: inline-block
+            vertical-align: top
+            width: 340px
+            margin: 0 20px
+            font-size: 14px
+            text-align: left
+            h2 
+                font-family: 'Proxima Nova Bold'
+                color: #43b2aa
+                text-align: center
+                font-size: 20px
+                background-position: center top
+                background-repeat: no-repeat
+                padding-top: 70px
+            
+            &.fast 
+                h2 
+                    background-image: url(fastIcon.png)
+                
+            
+            &.general 
+                h2 
+                    background-image: url(generalIcon.png)
+                
+            
+            &.remont 
+                h2 
+                    background-image: url(remontIcon.png)
+                
+            
+            strong 
+                font-family: 'Proxima Nova Bold'
+                font-size: 19px
+                margin: 30px 0 20px
+                display: block
+            
+        
+    
+    .info 
+        background-color: #43b2aa
+        background-image: url("infoIcon.png")
+        background-position: 50px 22px
+        background-repeat: no-repeat
+        border-radius: 6px
+        color: #fff
+        margin: 40px auto
+        padding: 20px 20px 20px 150px
+        width: 820px
+        p 
+            margin: 0
+        
+    
+
+.serviceMenuSpace 
+    min-width: 1200px
+    width: 100%
+    & > ul 
+        list-style-type: none
+        margin: 80px auto
+        padding: 0 0 50px
+        text-align: center
+        width: 1200px
+        & > li 
+            display: inline-block !important
+            background-repeat: no-repeat
+            background-position: center top
+            padding-top: 200px
+            width: 300px
+            margin: 0 30px
+            vertical-align: top
+            &.flat 
+                background-image: url('homeService.png')
+            
+            &.office 
+                background-image: url('officeService.png')
+            
+            &.cottage 
+                background-image: url('cottageService.png')
+            
+            & > ul 
+                display: inline-block
+                list-style-type: none
+                margin: 0
+                margin-top: 25px
+                padding: 0
+                text-align: left
+                li 
+                    line-height: 30px
+                    font-size: 15px
+                    a 
+                        color: #000
+                        text-decoration: none
+                        background-position: left center
+                        background-repeat: no-repeat
+                        display: block
+                        padding-left: 13px
+                    
+                
+            
+        
+    
+    &.closed 
+        & > ul 
+            border-bottom: solid 1px #cdcac4
+        
+    
+
+.serviceMenuSpace > ul > li > ul li a:hover, .serviceMenuSpace > ul > li > ul li a.active 
+    color: #42b2aa
+
+.faqSpace 
+    width: 100%
+    min-width: 1200px
+    div 
+        background-image: url("faqImg.png")
+        background-position: 670px bottom
+        background-repeat: no-repeat
+        margin: auto
+        width: 1200px
+    
+    h1 
+        background-image: url('faqTitle.png')
+        background-position: center top
+        background-repeat: no-repeat
+        text-indent: -10000px
+        height: 100px
+    
+    p 
+        text-align: center
+        font-size: 13px
+    
+    .info 
+        background-color: #43b2aa
+        background-image: url("infoIcon.png")
+        background-position: 50px 22px
+        background-repeat: no-repeat
+        border-radius: 6px
+        color: #fff
+        margin: 40px auto
+        padding: 20px 20px 20px 150px
+        width: 820px
+        line-height: 50px
+    
+    ul 
+        list-style-type: none
+        margin-left: 100px
+        margin-bottom: 100px
+        padding: 0
+        li 
+            line-height: 40px
+            font-size: 19px
+            margin: 0
+            padding: 0
+            font-family: 'Proxima Nova Bold'
+            a 
+                color: #000
+                display: block
+                padding-left: 15px
+                text-decoration: none
+            
+        
+    
+
+.faqSpace ul li a:hover, .faqSpace ul li a.active 
+    color: #42b2aa
+    background-image: url('bullet.png')
+    background-repeat: no-repeat
+    background-position: left center
+
+.contactsSpace 
+    width: 100%
+    min-width: 1200px
+    & > div 
+        width: 1200px
+        padding: 100px 0
+        margin: auto
+        text-align: center
+        & > div 
+            &.leftSpace 
+                background-image: url("contactBg.png")
+                background-position: left bottom
+                background-repeat: no-repeat
+                display: inline-block
+                font-size: 13px
+                line-height: 20px
+                padding-bottom: 50px
+                text-align: left
+                vertical-align: top
+                width: 400px
+                h2 
+                    font-size: 24px
+                    font-family: 'Proxima Nova Bold'
+                    margin-bottom: 50px
+                    margin-top: 0
+                
+                a 
+                    &:hover 
+                        text-decoration: underline
+                    
+                
+            
+            &.rightSpace 
+                text-align: left
+                display: inline-block
+                vertical-align: top
+                line-height: 20px
+                width: 430px
+                margin-left: 80px
+                h2 
+                    font-size: 24px
+                    font-family: 'Proxima Nova Bold'
+                    margin-top: 0
+                    margin-bottom: 50px
+                
+                ul 
+                    list-style-type: none
+                    margin: 0
+                    padding: 0
+                    li 
+                        line-height: 30px
+                        font-size: 13px
+                        padding-left: 30px
+                        background-image: url('contactBullet.png')
+                        background-repeat: no-repeat
+                        background-position: left center
+                    
+                
+            
+        
+    
+    a 
+        color: #47413a
+        text-decoration: none
+    
+
+.sitemap 
+    & > li 
+        margin-top: 20px
+        font-size: 19px
+    
+    ul 
+        li 
+            &.title 
+                margin-top: 10px
+                margin-bottom: 5px
+                list-style-type: none
+                padding: 0
+            
+        
+    
+    a 
+        color: #000
+        text-decoration: none
+        font-size: 14px
+        &:hover 
+            text-decoration: underline
+        
+    
+
+.arrowUpSpace 
+    bottom: 30px
+    display: none
+    left: 50px
+    margin: auto
+    position: fixed
+    width: 43px
+    z-index: 500
+
+.arrowUp 
+    background-image: url("up-arrow.png")
+    width: 41px
+    display: block
+    height: 41px
+    margin-left: 0px
+    &:hover 
+        background-position: 0 41px
+    
+
+.personalSpace 
+    width: 100%
+    min-width: 1200px
+    margin-top: 50px
+    .personal 
+        width: 1200px
+        margin: auto
+        overflow: hidden
+        font-size: 14px
+        line-height: 20px
+        &.login 
+            div 
+                &.left 
+                    label 
+                        width: 340px
+                        margin: auto
+                        display: block
+                        padding-top: 10px
+                        font-size: 11px
+                        margin-bottom: 20px
+                        div 
+                            &.checkbox 
+                                display: block
+                                float: left
+                                margin-top: -10px
+                                margin-right: 10px
+                            
+                        
+                    
+                
+            
+            &.register 
+                h2 
+                    background-image: url('titleRegister.png')
+                    height: 80px
+                    background-position: center top
+                
+            
+        
+    
+    a 
+        color: #42b2aa
+        text-decoration: none
+        font-weight: bold
+        &:hover 
+            text-decoration: underline
+        
+    
+    & > .personal 
+        & > .left 
+            display: inline-block
+            margin-left: 90px
+            vertical-align: top
+            width: 440px
+        
+        & > .right 
+            display: inline-block
+            vertical-align: top
+            width: 600px
+        
+        &.login 
+            & > .left 
+                h2 
+                    background-image: url('titleLogin.png')
+                    height: 60px
+                    background-position: center center
+                    background-repeat: no-repeat
+                    text-indent: -1000px
+                    margin-bottom: 0px
+                
+                p 
+                    margin: 0
+                    margin-bottom: 25px
+                    text-align: center
+                    input 
+                        width: 300px
+                        height: 40px
+                        font-size: 16px
+                        padding: 0 20px
+                        font-family: 'Proxima Nova Regular'
+                    
+                    button 
+                        border: solid 1px #42b2aa
+                        background-color: #42b2aa
+                        color: #FFF
+                        font-family: 'Proxima Nova Regular'
+                        width: 340px
+                        height: 40px
+                        font-size: 15px
+                        cursor: pointer
+                    
+                    &.text-right 
+                        text-align: right
+                        width: 340px
+                        margin: auto
+                    
+                
+            
+            & > .right 
+                margin-top: 120px
+                background-image: url('verticalHr.png')
+                background-repeat: no-repeat
+                background-position: left top
+                padding-left: 50px
+                ul 
+                    margin: 0
+                    padding: 0
+                    list-style-type: none
+                    background-image: url('socialBar.png')
+                    background-repeat: no-repeat
+                    background-position: -9px top
+                    li 
+                        margin-bottom: 30px
+                        margin-top: 2px
+                        padding-left: 40px
+                        a 
+                            color: #47413a
+                        
+                    
+                
+            
+            &.register 
+                & > .right 
+                    margin-top: 140px
+                    background-image: url('registerBg.png')
+                    background-position: center bottom
+                    padding-bottom: 220px
+                
+            
+        
+        &.main 
+            & > .left 
+                width: 600px
+                margin-right: 100px
+            
+            & > .right 
+                width: 260px
+            
+            &.ordersList 
+                h2 
+                    background-image: url('titleOrders.png')
+                    height: 60px
+                    background-position: center center
+                    background-repeat: no-repeat
+                    text-indent: -1000px
+                    margin-bottom: 0px
+                    margin-top: 0
+                
+                & > div 
+                    &.left 
+                        font-size: 13px
+                        & > div 
+                            &.empty 
+                                background-color: #FFF
+                                border: solid 1px #eeece7
+                                text-align: center
+                                margin-top: 40px
+                                h3 
+                                    color: #42b2aa
+                                    font-family: 'Proxima Nova Bold'
+                                    font-size: 24px
+                                    margin-top: 40px
+                                
+                                a 
+                                    border: solid 1px #42b2aa
+                                    display: inline-block
+                                    background-color: #42b2aa
+                                    color: #FFF
+                                    font-family: 'Proxima Nova Regular'
+                                    width: 340px
+                                    height: 40px
+                                    line-height: 40px
+                                    vertical-align: middle
+                                    font-size: 15px
+                                    cursor: pointer
+                                    margin-bottom: 80px
+                                    margin-top: 30px
+                                    text-decoration: none
+                                
+                                &.ordersList 
+                                    margin-top: 0
+                                
+                            
+                            &.favoriteList 
+                                background-image: url('favoriteListBg.png')
+                            
+                            &.blackList 
+                                background-image: url('blackListBg.png')
+                                h3 
+                                    color: #f1635f
+                                
+                            
+                        
+                        & > ul 
+                            &.ordersListMenu 
+                                list-style-type: none
+                                text-align: center
+                                margin: 0
+                                padding: 0
+                                font-size: 0
+                                border: 1px solid #c6b6a8
+                                background-color: #FFF
+                                li 
+                                    display: inline-block
+                                    padding: 20px
+                                    font-size: 14px
+                                    width: 259px
+                                    cursor: pointer
+                                    &.active 
+                                        background-color: #42b2aa
+                                        color: #FFF
+                                    
+                                
+                            
+                            &.ordersList 
+                                border: 1px solid #c6b6a8
+                                border-top: 0
+                                background-color: #FFF
+                                margin: 0
+                                padding: 0
+                                list-style-type: none
+                                li 
+                                    border-bottom: 1px solid #c6b6a8
+                                    position: relative
+                                    &.canceled 
+                                        opacity: 0.5
+                                    
+                                    &:last-child 
+                                        border-bottom: 0
+                                    
+                                    &:hover 
+                                        background-color: #eeece7
+                                        cursor: pointer
+                                    
+                                    a 
+                                        text-decoration: none
+                                        color: #676160
+                                        display: block
+                                        padding: 20px
+                                    
+                                    & > a 
+                                        & > div 
+                                            display: inline-block
+                                            vertical-align: middle
+                                            &.date 
+                                                width: 150px
+                                                strong 
+                                                    font-family: 'Proxima Nova Bold'
+                                                
+                                            
+                                            &.address 
+                                                width: 200px
+                                            
+                                            &.cleaner 
+                                                width: 200px
+                                                text-align: center
+                                                span 
+                                                    &.empty 
+                                                        color: #42b2aa
+                                                    
+                                                
+                                            
+                                        
+                                    
+                                    div 
+                                        &.workersList 
+                                            background-color: #fff
+                                            box-shadow: 0 0 10px #000
+                                            line-height: 43px
+                                            padding: 0 10px
+                                            position: absolute
+                                            right: 30px
+                                            text-align: left
+                                            top: 60px
+                                            width: 140px
+                                            z-index: 100
+                                            display: none
+                                            border-radius: 10px
+                                            & > div 
+                                                overflow: hidden
+                                                margin: 5px 0
+                                                padding-bottom: 5px
+                                                border-bottom: 1px solid #c6b6a8
+                                                &:last-child 
+                                                    border: 0
+                                                    padding-bottom: 0
+                                                
+                                            
+                                        
+                                        &.cleaner 
+                                            div 
+                                                &.img 
+                                                    width: 43px
+                                                    height: 43px
+                                                    overflow: hidden
+                                                    border-radius: 23px
+                                                    float: left
+                                                    margin-right: 10px
+                                                    img 
+                                                        width: 43px
+                                                    
+                                                
+                                                &.single 
+                                                    text-align: left
+                                                    display: inline-block
+                                                    line-height: 43px
+                                                
+                                            
+                                        
+                                        p 
+                                            margin: 0
+                                            padding: 0
+                                        
+                                    
+                                
+                            
+                        
+                    
+                    &.right 
+                        &.discount 
+                            h4 
+                                background-image: url('titleDiscount.png')
+                                height: 90px
+                                background-position: center center
+                                background-repeat: no-repeat
+                                text-indent: -1000px
+                                margin-bottom: 0px
+                                margin-top: 0
+                            
+                            input 
+                                background-color: #FFF
+                                border: solid 1px #eeece7
+                                width: 200px
+                                height: 40px
+                                font-size: 16px
+                                padding: 0 30px
+                                margin-top: 20px
+                                font-family: 'Proxima Nova Regular'
+                                text-align: center
+                            
+                            ul 
+                                margin: 0
+                                padding: 0
+                                list-style-type: none
+                                background-image: url('socialBarH.png')
+                                background-position: 16px center
+                                background-repeat: no-repeat
+                                height: 40px
+                                li 
+                                    display: inline-block
+                                    height: 33px
+                                    margin: 0 16px
+                                    width: 30px
+                                    a 
+                                        display: block
+                                        height: 33px
+                                    
+                                
+                            
+                            h5 
+                                background-image: url('parnerLogo.png')
+                                background-position: center top
+                                background-repeat: no-repeat
+                                padding-top: 90px
+                                text-align: center
+                                font-size: 24px
+                                margin-bottom: 20px
+                                margin-top: 20px
+                                font-family: 'Proxima Nova Bold'
+                            
+                            p 
+                                text-align: center
+                            
+                            strong 
+                                font-size: 24px
+                                color: #42b2aa
+                                font-family: 'Proxima Nova Bold'
+                                display: block
+                                text-align: center
+                            
+                        
+                    
+                
+            
+            &.cleanerList 
+                h2 
+                    background-image: url('cleanersTitle.png')
+                
+                & > div 
+                    &.left 
+                        & > ul 
+                            &.ordersListMenu 
+                                li 
+                                    width: 159px
+                                    &:last-child 
+                                        width: 160px
+                                    
+                                
+                            
+                            &.ordersList 
+                                li 
+                                    div 
+                                        &.cleaner 
+                                            div 
+                                                &.single 
+                                                    width: 280px
+                                                    padding: 20px
+                                                
+                                            
+                                            & > a 
+                                                display: inline-block
+                                                &.add2Favorite 
+                                                    color: #42b2aa
+                                                
+                                                &.add2Black 
+                                                    color: #000
+                                                
+                                                &.remove 
+                                                    width: 230px
+                                                    text-align: right
+                                                
+                                            
+                                        
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+.finishedOrdersList 
+    display: none
+
+.personalSpace > .personal.main.ordersList > div.left > div.favoriteList, .personalSpace > .personal.main.ordersList > div.left > div.blackList 
+    background-position: center 40px
+    background-repeat: no-repeat
+    display: none
+    padding: 100px 10px 0
+
+.personalSpace > .personal.main.ordersList > div.left > ul.favoriteList, .personalSpace > .personal.main.ordersList > div.left > ul.blackList 
+    display: none
+
+.calendarSpace 
+    background-color: #fff
+    border: 1px solid #d9d9d9
+    display: none
+    position: absolute
+    right: 47px
+    text-align: center
+    top: 38px
+    width: 250px
+    z-index: 1000
+    table 
+        td 
+            width: 50px
+            color: #cfcfcf
+            &.event 
+                position: relative
+            
+            & > div 
+                position: absolute
+                background-color: #FFF
+                white-space: nowrap
+                z-index: 100
+                border: solid 1px #d9d9d9
+                padding: 0 3px
+            
+            &.prevDay 
+                color: #000
+            
+        
+        .weekend 
+            color: #FF0000
+        
+        a 
+            color: #000
+            display: inline-block
+            height: 25px
+            line-height: 24px
+            width: 25px
+            text-decoration: none
+            &:hover 
+                text-decoration: none
+            
+        
+    
+
+.calendarSpace table td .monthTitle, .calendarSpace table td.monthTitle 
+    color: #000
+
+.newAddressDialogSpace 
+    background-image: url(popUpBg.png)
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 1000
+    display: none
+    & > .newAddressDialog 
+        left: 50%
+        position: absolute
+        top: 50%
+        & > div 
+            background-color: #fff
+            padding: 30px
+            margin-left: -250px
+            margin-top: -160px
+            position: relative
+            h2 
+                margin: 0
+                text-indent: -1000px
+                background-image: url(titleNewAddress.png)
+                background-repeat: no-repeat
+                background-position: center top
+                height: 60px
+            
+            & > div 
+                &.row 
+                    button 
+                        width: 200px
+                        margin: auto
+                        display: block
+                        margin-top: 20px
+                        background-color: #43b2aa
+                        color: #fff
+                        border: 0
+                        height: 40px
+                        font-size: 15px
+                        cursor: pointer
+                    
+                
+            
+            a 
+                &.close 
+                    color: #000
+                    font-size: 30px
+                    position: absolute
+                    right: 20px
+                    text-decoration: none
+                    top: 10px
+                
+            
+        
+    
+
+.newAddressDialog 
+    div 
+        &.row 
+            & > label 
+                width: 130px
+            
+        
+    
+
+.personal 
+    &.newOrderStep2 
+        border: solid 1px #c6b6a8
+        background-color: #FFF
+        font-size: 0
+        width: 961px
+        .left 
+            border-right: solid 1px #c6b6a8
+            margin: 0
+            width: 600px
+            font-size: 14px
+            padding-bottom: 30px
+            .title 
+                font-size: 14px
+                border-bottom: solid 1px #c6b6a8
+                padding: 20px 30px
+                p 
+                    margin: 0
+                    margin-top: 20px
+                
+                span 
+                    font-size: 24px
+                
+            
+            .selection 
+                & > p 
+                    border-bottom: solid 1px #c6b6a8
+                    padding: 10px 30px
+                    margin: 0
+                    text-align: center
+                    span 
+                        font-size: 8px
+                    
+                
+                ul 
+                    list-style-type: none
+                    margin: 0
+                    padding: 0
+                    font-size: 0
+                    li 
+                        display: inline-block
+                        width: 299px
+                        font-size: 14px
+                        text-align: center
+                        padding: 20px 0
+                        border-bottom: solid 1px #c6b6a8
+                        cursor: pointer
+                        &.active 
+                            background-color: #42b2aa
+                            color: #FFF
+                        
+                        &:first-child 
+                            border-right: solid 1px #c6b6a8
+                        
+                    
+                
+            
+            .row 
+                margin-left: 30px
+                margin-top: 20px
+            
+            & > label 
+                padding-left: 30px
+                display: block
+                textarea 
+                    background-color: #f1f1f2
+                    border: 1px solid #c6b6a8
+                    display: block
+                    height: 100px
+                    resize: none
+                    width: 530px
+                
+            
+        
+        .right 
+            width: 360px
+            font-size: 14px
+            & > div 
+                border-bottom: 1px solid #c6b6a8
+                padding: 30px 40px
+                &.first 
+                    height: 63px
+                    span 
+                        color: #939597
+                        display: block
+                    
+                
+                &.second 
+                    height: 43px
+                    & > p 
+                        margin: 0
+                        overflow: hidden
+                        span 
+                            display: inline-block
+                            text-align: right
+                            width: 140px
+                        
+                        strong 
+                            color: #939597
+                            display: inline-block
+                            width: 132px
+                        
+                    
+                
+                &.third 
+                    border: 0
+                    & > p 
+                        strong 
+                            color: #939597
+                            display: inline-block
+                            width: 132px
+                        
+                        span 
+                            display: inline-block
+                            text-align: right
+                            width: 140px
+                            font-family: 'Proxima Nova Bold'
+                            font-size: 17px
+                        
+                    
+                    button 
+                        background-color: #42b2aa
+                        border: 1px solid #c6b6a8
+                        color: #fff
+                        cursor: pointer
+                        display: block
+                        font-family: "Proxima Nova Regular"
+                        margin: 100px auto auto
+                        padding: 10px 20px
+                        width: 270px
+                        font-size: 16px
+                    
+                
+            
+        
+    
+

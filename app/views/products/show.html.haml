@@ -1,0 +1,11 @@
+%h1= @product.name
+
+%p Price: 
+= number_to_currency @product.price
+%p Image:
+= image_tag @product.image, width: 300
+
+%br
+= link_to 'Edit', edit_admin_product_path(@product)
+\|
+= link_to 'Back', admin_products_path

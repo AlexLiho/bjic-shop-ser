@@ -1,0 +1,30 @@
+<script>
+    var standart = new Array();
+    var general = new Array();
+    var remont = new Array();
+    standart[1] = 1500;
+    standart[2] = 1800;
+    standart[3] = 2000;
+    standart[4] = 2900;
+    general[1] = 2900;
+    general[2] = 3900;
+    general[3] = 4900;
+    general[4] = 5900;
+    remont[1] = 5500;
+    remont[2] = 6500;
+    remont[3] = 8500;
+    remont[4] = 9500;
+    var wc = 300;
+    var bal = 500;
+    var okno = 250;
+    var lustra = 200;
+    var holod = 300;
+    var duhov = 300;
+    var glad = new Array();
+    glad[1] = 300;
+    glad[2] = 150;
+    glad[3] = 700;
+    var getkey = 300;
+    var fast = 2000;
+    var eco = 40;
+</script>

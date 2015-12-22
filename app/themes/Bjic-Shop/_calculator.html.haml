@@ -1,0 +1,268 @@
+= javascript_include_tag "calc"
+%form{:action => "", :method => "post"}
+  .calculateSpace.unregistered
+    %div
+      .top
+        %a{:name => "main"}
+      .content
+        .leftSpace
+          %h1 Калькулятор
+          .row
+            %label{:for => "flattype"}
+              Количество комнат
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  1 - комн от 0 - 50 м2, 2 комн. от 0 - 70 м2, 3 комн. от 0 - 100 м2, 4 комн. от 0 - 150 м2
+            .selector
+              %input{:name => "flattype", :type => "hidden", :value => "1"}/
+              %div
+                %p 1 комната
+                %span
+              %ul
+                %li{:rel => "1"} 1 комната
+                %li{:rel => "2"} 2 комнаты
+                %li{:rel => "3"} 3 комнаты
+                %li{:rel => "4"} 4 комнаты
+          .row
+            %label{:for => "type"}
+              Тип уборки
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Выберите тип уборки
+              %span
+                %a{:href => "#what"} Что входит в уборку?
+            .selector
+              %input{:name => "type", :type => "hidden", :value => "standart"}/
+              %div
+                %p Быстрая
+                %span
+              %ul
+                %li{:rel => "standart"} Быстрая
+                %li{:rel => "general"} Генеральная
+                %li{:rel => "remont"} После ремонта
+          %p Дополнительные услуги
+          .row.withHint
+            %label
+              Мойка окон
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Цена из расчета за стандартное окно 2 створки, целиком с двух сторон
+              %span 250 руб. / шт.
+            .spinner
+              %a.less{:href => "#"}
+              %input{:name => "windowNum", :type => "text", :value => "0"}/
+              %a.more{:href => "#"}
+          .row.withHint
+            %label
+              Мытье холодильника внутри
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Удаление запахов и дезинфекция
+              %span 300 руб. / шт.
+            .spinner
+              %a.less{:href => "#"}
+              %input{:name => "holod", :type => "text", :value => "0"}/
+              %a.more{:href => "#"}
+          .row.withHint
+            %label
+              Мытье духовки/СВЧ внутри
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Обезжиривание и очистка духового шкафа и/или СВЧ печи
+              %span 300 руб. / шт.
+            .spinner
+              %a.less{:href => "#"}
+              %input{:name => "duhov", :type => "text", :value => "0"}/
+              %a.more{:href => "#"}
+          .row.withHint
+            %label
+              Мытье люстры
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Указывайте только те люстры, которые висят на потолке
+              %span 200 руб. / шт.
+            .spinner
+              %a.less{:href => "#"}
+              %input{:name => "lustraNum", :type => "text", :value => "0"}/
+              %a.more{:href => "#"}
+          .row.withHint
+            %label
+              Глажка
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Профессионально гладим одежду
+              %span 300 руб. / 30 мин.
+            .spinner
+              %a.less{:href => "#"}
+              %input{:name => "glad1", :type => "text", :value => "0"}/
+              %a.more{:href => "#"}
+          .row.withHint
+            %label
+              Поменять белье
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Поменяем комплект белья оставленный вами в указанном месте
+              %span 150 руб. / шт.
+            .spinner
+              %a.less{:href => "#"}
+              %input{:name => "glad2", :type => "text", :value => "0"}/
+              %a.more{:href => "#"}
+          .row.withHint
+            %label
+              Особые поручения
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Например: разложить вещи по цветам, сходить в магазин, отнести вещи в химчистку
+              %span 700 руб. / час
+            .spinner
+              %a.less{:href => "#"}
+              %input{:name => "glad3", :type => "text", :value => "0"}/
+              %a.more{:href => "#"}
+          .row.withHint
+            %label
+              Уборка на балконе
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Мытье пола, обеспыливание поверхностей на балконе (мойка окон не входит в стоимость)
+              %span 500 руб. / шт.
+            .spinner
+              %a.less{:href => "#"}
+              %input{:name => "balNum", :type => "text", :value => "0"}/
+              %a.more{:href => "#"}
+          .row.withHint
+            %label
+              Эко-уборка
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Полная эко уборка квартиры - Ecover, Kiehl
+              %span +40% к стоимости
+            .checkbox
+              %input{:name => "eco", :type => "hidden", :value => "false"}/
+          .row.withHint
+            %label
+              Заехать за ключами от квартиры
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Если у вас совсем нет времени, мы поможем :)
+              %span 300 руб.
+            .checkbox
+              %input{:name => "getkey", :type => "hidden", :value => "false"}/
+          .row.withHint
+            %label
+              Промокод
+              %a.info{:href => "#"}
+                %div
+                  %span>
+                  Впишите если у вас есть наш промокод на скидку
+              %span.promoError Промо-код для данной уборки не действителен
+            %input.textinput{:name => "promo", :type => "text", :value => ""}/
+            %a{:href => "#"} Применить
+        .rightSpace
+          .totalSpace
+            %h4 Уборка квартиры с 1 жилой комнатой и одной ванной
+            .additional
+              %span Дополнительно
+              %p Мытьё духовки / СВЧ внутри
+              %p Глажка
+            %div
+              %p К оплате
+              %p.total
+                %span> 4000
+                3500 руб.
+              %input{:name => "total", :type => "hidden", :value => "0"}/
+              %input{:name => "freeWindow", :type => "hidden", :value => "false"}/
+              %input{:name => "standartDiscount", :type => "hidden", :value => "false"}/
+              %input{:name => "generalDiscount", :type => "hidden", :value => "false"}/
+              %input{:name => "remontDiscount", :type => "hidden", :value => "false"}/
+              %input{:name => "comment", :type => "hidden", :value => ""}/
+              %input{:name => "totalCost", :type => "hidden", :value => "0"}/
+              %input{:name => "discount", :type => "hidden", :value => "0"}/
+          .row
+            %label
+              Имя:
+            %input.textinput{:name => "name", :type => "text"}/
+          .row
+            %label
+              Телефон:
+            %input.textinput{:name => "phone", :type => "text"}/
+          /
+            <div class="row reverse">
+            <div class="checkbox"><input type="hidden" name="accept" value="false" /></div>
+            <label class="big">
+            \&amp;nbsp;&amp;nbsp;Принимаю <a href="#">условия пользования</a> сервисом
+            </label>
+            </div>
+          %a.submit{:href => "#"} Заказать уборку
+          %ul.miniFaq
+            %li
+              %h4
+                %a{:href => "#what"} Что входит в уборку
+            %li.accordion
+              %h4 Расценки на уборку
+              #content__calculate__calculate__1__p1.adminTextEl
+                %p
+                  %strong> Расценки на уборку кварир
+                  \&nbsp;строго соответствуют заявленным в калькуляторе.
+                  %br/
+                %p
+                  Вы можете сами&nbsp;
+                  %strong> рассчитать стоимость уборки
+                  , выбрать дополнительные услуги, и сделать заказ. &nbsp;
+                %p Мы работаем без доплат и изменений цен "на месте"!
+                %p В случае нестандартных уборок или иных вопросов, возникающих в процессе уборки, убедительно просим связаться с нами для уточнений и корректировок.
+                %p В калькуляторе используется следующая классификация квартир:&nbsp;
+                %blockquote
+                  %p{"data-mce-style" => "text-align: left;", :style => "text-align: left;"}
+                    %span{"data-mce-style" => "text-decoration: underline;", :style => "text-decoration: underline;"}
+                      %strong 1 &nbsp;комн от 0 - 50 м2
+                  %p{"data-mce-style" => "text-align: left;", :style => "text-align: left;"}
+                    %span{"data-mce-style" => "text-decoration: underline;", :style => "text-decoration: underline;"}
+                      %strong 2 комн. от 0 - 70 м2
+                  %p{"data-mce-style" => "text-align: left;", :style => "text-align: left;"}
+                    %span{"data-mce-style" => "text-decoration: underline;", :style => "text-decoration: underline;"}
+                      %strong 3 комн. от 0 - 100 м2
+                  %p{"data-mce-style" => "text-align: left;", :style => "text-align: left;"}
+                    %span{"data-mce-style" => "text-decoration: underline;", :style => "text-decoration: underline;"}
+                      %strong 4 комн. от 0 - 150 м2
+            %li.accordion
+              %h4 Приблизительное время уборки
+              #content__calculate__calculate__1__p4.adminTextEl
+                %p{"data-mce-style" => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;", :style => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;"} Приблизительное время уборки квартир:
+                %p{"data-mce-style" => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;", :style => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;"}
+                  \&nbsp;
+                  %br/
+                %p{"data-mce-style" => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;", :style => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;"} 1 комнатная ~ 1.5 - 3 часа
+                %p{"data-mce-style" => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;", :style => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;"} 2 комнатная ~ 2 - 5 часов
+                %p{"data-mce-style" => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;", :style => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;"} 3 комнатная ~ 5 - 8 часов
+                %p{"data-mce-style" => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;", :style => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;"} 4 комнатная ~ 6 - 10 часов
+                %p{"data-mce-style" => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;", :style => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;"}
+                  \&nbsp;
+                  %br/
+                %p{"data-mce-style" => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;", :style => "text-indent: 0px; margin-bottom: 0px; margin-top: 0px;"} Однако, мы стремимся не ограничивать уборку по времени, для нас главное - результат. Пожалуйста планируйте свое время заранее.
+            %li.accordion
+              %h4 Кто приедет убирать?
+              #content__calculate__calculate__1__p5.adminTextEl
+                %p
+                  %ul
+                    %li - Славяне
+                    %li - Профессионалы своего дела
+                    %li - Только прошедшие профессиональный отбор
+                  %br/
+                %p
+                  /%img{:alt => "", "data-mce-src" => "#", :height => "375", :src => "uploads/photostore/1446763669973.jpg", :width => "500"}/
+                %p Сотрудники постоянно проходят внутреннюю курсы повышения квалификации на базе наших партнеров, производителей чистящих средств мирового класса. Весь необходимый инвентарь наши клинеры всегда приносят с собой.
+                
+      .bottom
+      %a{:name => "what"}
